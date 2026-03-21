@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    // === Salida ===
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // === Entorno ===
+    "target": "ES2021",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "lib": ["esnext"],
+    "types": ["node"],
+
+    // === Decoradores (requerido por TypeORM) ===
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    // === Otras opciones útiles ===
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // === Evita errores con decoradores ===
+    "isolatedModules": false,
+    "noUncheckedSideEffectImports": false
+  },
+
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
